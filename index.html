@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -18,41 +18,46 @@
 <div class="gallery">
 
     <ul class="controls">
-        <li class="buttons active" data-filter="all">all</li>
-        <li class="buttons" data-filter="ice-cream">ice-cream</li>
-        <li class="buttons" data-filter="chocolate">chocolate</li>
-        <li class="buttons" data-filter="cake">cake</li>
-        <li class="buttons" data-filter="juice">juice</li>
-        <li class="buttons" data-filter="sandwich">sandwich</li>
+        <li class="buttons active" data-filter="all">Todos</li>
+        <li class="buttons" data-filter="Entradas">Entradas</li>
+        <li class="buttons" data-filter="Arg">Cortes Argentinos</li>
+        <li class="buttons" data-filter="Ame">Cortes Americanos</li>
+        <li class="buttons" data-filter="Angus">Angus Nacional</li>
+        <li class="buttons" data-filter="Rec">Recomendaciones</li>
+        <li class="buttons" data-filter="Ban">Banquetes Premium</li>
+        <li class="buttons" data-filter="Gua">Guarniciones</li>
+      
     </ul>
 
     <div class="image-container">
+        
+        <a href="https://res.cloudinary.com/dcsih3azv/image/upload/v1708814393/Images/Picanayfetuccini_rpd0vx.png" class="image Rec">
+            <img src="https://res.cloudinary.com/dcsih3azv/image/upload/v1708814393/Images/Picanayfetuccini_rpd0vx.png" alt="">
+            
+        </a>
+        
+        <a href="images/1233.jpg" class="image Angus">
+            <img src="images/1233.jpg" alt="">
+        </a>
+        <a href="images/asda.jpg" class="image Ban">
+            <img src="images/asda.jpg" alt="">
+        </a>
 
-        <a href="images/ice-cream1.jpg" class="image ice-cream">
-            <img src="images/ice-cream1.jpg" alt="">
-        </a>
-        <a href="images/ice-cream2.jpg" class="image ice-cream">
-            <img src="images/ice-cream2.jpg" alt="">
-        </a>
-        <a href="images/ice-cream3.jpg" class="image ice-cream">
-            <img src="images/ice-cream3.jpg" alt="">
-        </a>
-
-        <a href="images/chocolate1.jpg" class="image chocolate">
+        <a href="images/chocolate1.jpg" class="image Entradas">
             <img src="images/chocolate1.jpg" alt="">
         </a>
-        <a href="images/chocolate2.jpg" class="image chocolate">
-            <img src="images/chocolate2.jpg" alt="">
+        <a href="images/ddwdwdw.jpg" class="image Rec">
+            <img src="images/ddwdwdw.jpg" alt="">
         </a>
 
-        <a href="https://res.cloudinary.com/dcsih3azv/image/upload/v1708732222/Images/cake1_ul7ite.jpg" class="image cake">
+        <a href="https://res.cloudinary.com/dcsih3azv/image/upload/v1708732222/Images/cake1_ul7ite.jpg" class="image Entradas">
             <img src="https://res.cloudinary.com/dcsih3azv/image/upload/v1708732222/Images/cake1_ul7ite.jpg" alt="">
         </a>
-        <a href="images/cake2.jpg" class="image cake">
-            <img src="images/cake2.jpg" alt="">
+        <a href="images/images.jpg" class="image Ame">
+            <img src="images/images.jpg" alt="">
         </a>
-        <a href="images/cake3.jpg" class="image cake">
-            <img src="images/cake3.jpg" alt="">
+        <a href="images/e2e2e2.jpg" class="image Gua">
+            <img src="images/e2e2e2.jpg" alt="">
         </a>
         <a href="images/cake4.jpg" class="image cake">
             <img src="images/cake4.jpg" alt="">
@@ -61,7 +66,7 @@
             <img src="images/cake5.jpg" alt="">
         </a>
 
-        <a href="images/juice1.jpg" class="image juice">
+        <a href="images/juice1.jpg" class="image Entradas">
             <img src="images/juice1.jpg" alt="">
         </a>
         <a href="images/juice2.jpg" class="image juice">
@@ -86,6 +91,7 @@
 
     </div>
 
+    
 </div>
 
 
@@ -110,6 +116,7 @@ $(document).ready(function(){
         }else{
             $('.image').not('.'+filter).hide(200);
             $('.image').filter('.'+filter).show(400);
+            
         }
 
     });
